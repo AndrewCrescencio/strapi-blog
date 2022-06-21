@@ -1,0 +1,26 @@
+{
+  "kind": "collectionType",
+  "collectionName": "categories",
+  "info": {
+    "singularName": "category",
+    "pluralName": "categories",
+    "displayName": "category"
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "displayName": {
+      "type": "string",
+      "required": true,
+      "unique": false,
+      "maxLength": 60,
+      "minLength": 3
+    },
+    "slug": {
+      "type": "uid",
+      "targetField": "displayName"
+    }
+  }
+}
